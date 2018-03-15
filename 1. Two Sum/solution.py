@@ -12,5 +12,5 @@ def twoSum(nums, target):
         num_indices[num] = i
 
 if __name__ == '__main__':
-    assert(twoSum([2, 7, 11, 15], 9) == (0, 1)
+    assert(twoSum([2, 7, 11, 15], 9) == (0, 1))
     assert(twoSum([2, 2], 4) == (0, 1))
