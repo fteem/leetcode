@@ -1,26 +1,15 @@
-def swap(nums, i, j):
-    tmp = nums[i]
-    nums[i] = nums[j]
-    nums[j] = tmp
-
 def removeDuplicates(nums):
     """
     :type nums: List[int]
     :rtype: int
     """
-    p1 = 0
-    p2 = len(nums) - 1
-    if p2 == -1:
+    if not nums:
         return 0
-    if p2 == 0:
-        return 1
-
-    while p1 < p2:
-        if p1 + 1 < len(nums) and nums[p1] == nums[p1 + 1]:
-            swap(nums, p1 + 1, p2)
-            p2 -= 1
-        else:
+    p1 = 0
+    for p2 in range(1, len(nums)):
+        if nums[p2] != nums[p1]:
             p1 += 1
+            nums[p1] = nums[p2]
     return p1 + 1
 
 if __name__ == '__main__':
