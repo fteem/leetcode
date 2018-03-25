@@ -1,8 +1,3 @@
-def swap(nums, p1, p2):
-    tmp = nums[p1]
-    nums[p1] = nums[p2]
-    nums[p2] = nums[p1]
-
 def removeElement(nums, val):
     """
     :type nums: List[int]
