@@ -22,4 +22,4 @@ def deleteDuplicates(head):
     return head
 
 if __name__ == '__main__':
-    main()
+    pass
